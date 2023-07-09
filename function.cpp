@@ -6,34 +6,29 @@ using namespace std;
 // student name, id, age, coursename;
 struct Student
 {
- string name;
- int age;
+  private:
+ string Name;
+ int Age;
  string location;
  string course_name;
- void printSothing()
+ public:
+ void print_student_information(string name,int age)
  {
-    cout<<"hello Student, how are you today"<<endl;
+Name=name;
+Age=age;
+cout<<"NAME :"<<name<<endl;
+cout<<"AGE  :"<<age<<endl;
+
+
  }
+
 };
-Student var;
 
 int main()
 {
-    // var.age=34;
-    // var.name="Helen";
-    // var.location="Tulu";
    
-
-//diaplay the information
-  
-cout<<"Enter student name:";
-cin>>var.name;
-cout<<"Enter student name:";
-cin>>var.age;
-cout<<"Name:"<<var.name<<endl;
-cout<<"Age:"<<var.age<<endl;
-  //cout<<"something:"<<var.printSothing()<<endl;
-  //var.printSothing();
+  Student var;
+  var.print_student_information("Felix",56);
 
     return 0;
 }
