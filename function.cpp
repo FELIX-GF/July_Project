@@ -29,6 +29,7 @@ int main()
    
   Student var;
   var.print_student_information("Felix",56);
+  var.print_student_information("Daniel",36);
 
     return 0;
 }
