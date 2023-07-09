@@ -6,7 +6,6 @@ using namespace std;
 // student name, id, age, coursename;
 struct Student
 {
- private:
  string name;
  int age;
  string location;
