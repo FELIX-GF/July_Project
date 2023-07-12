@@ -1,4 +1,4 @@
-//C++ Example programming (rolling dice)
+//C++ Example programming (rolling dice) using rand function 
 #include<iostream>
 #include<cmath>
 #include<ctime>
@@ -12,6 +12,7 @@ short first =rand()%(maxValue-minValue+1)+minValue;
 short second =rand()%(maxValue-minValue+1)+minValue;
 cout<<first<<", "<<second;
 cout<<endl;
+
 
     return 0;
 }

@@ -1,3 +1,4 @@
+// passing array (Function)
 #include<iostream>
 using namespace std;
 void printSomething(int num[5])
