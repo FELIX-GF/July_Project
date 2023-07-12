@@ -2,36 +2,35 @@
 #include<cmath>
 #include<cstring>
 using namespace std;
-//Display student information using structure user defined datatype
-// student name, id, age, coursename;
-struct Student
-{
-  private:
- string Name;
- int Age;
- string location;
- string course_name;
- public:
- void print_student_information(string name,int age)
- {
-Name=name;
-Age=age;
-cout<<"NAME :"<<name<<endl;
-cout<<"AGE  :"<<age<<endl;
-
-
- }
-
-};
-
+// Define function prototype 
+int MAX(int x, int y,int z);
 int main()
 {
-   
-  Student var;
-  var.print_student_information("Felix",56);
-  var.print_student_information("Daniel",36);
 
+ int  num, num1, num3;
+ cout<<"Please Enter Number 1:";
+ cin>>num;
+ cout<<"Please Enter Number 2:";
+ cin>>num1;
+ cout<<"Please Enter Number 3:";
+ cin>>num3;
+ cout<<endl;
+ cout<<" The Maximum  Value is :"<<MAX(num,num1,num3)<<endl;
     return 0;
-}
 
+}
+int MAX(int x, int y, int z)
+{
+  int maxValue=x;
+
+  if(y>maxValue)
+  {
+    maxValue=y;
+  }
+   if(z>maxValue)
+  {
+    maxValue=z;
+  }
+  return maxValue;
+}
 
