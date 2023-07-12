@@ -10,7 +10,7 @@ int f(int n){
 int main()
 {
 int fun=f(10);
-cout<<" n+f(n-1) :"<<fun<<endl;
+cout<<"SUM :"<<fun<<endl;
 
 return 0;
 }
