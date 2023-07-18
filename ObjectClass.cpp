@@ -10,7 +10,6 @@
 
 #include<iostream>
 using namespace std;
-
 class StudentData{
 private:
      string Name;
@@ -37,15 +36,21 @@ void printstu_data(){
 
 }
 };
+class Teacher:public StudentData{
+
+};
 int main()
 {
 
-StudentData stu;
-stu.setName("Felix");
-stu.setAge(34);
-stu.setSalary(4567.89);
-stu.printstu_data();
-
-
+// StudentData stu;
+// stu.setName("Felix");
+// stu.setAge(34);
+// stu.setSalary(4567.89);
+// stu.printstu_data();
+Teacher t;
+t.setName("Eyob");
+t.setAge(78);
+t.setSalary(678.90);
+t.printstu_data();
     return 0;
 }
